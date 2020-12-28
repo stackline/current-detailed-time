@@ -9,7 +9,7 @@ func main() {
 	now := time.Now()
 	sec := now.Unix()
 	nanosec := now.UnixNano()
-	less_than_one_sec := nanosec - (sec * 1000 * 1000 * 1000)
+	lessThanOneSec := nanosec - (sec * 1000 * 1000 * 1000)
 
-	fmt.Printf("%d.%09d\n", sec, less_than_one_sec)
+	fmt.Printf("%d.%09d\n", sec, lessThanOneSec)
 }
